@@ -1,3 +1,4 @@
+/*｛サイト全体のデザインについて｝*/
 body {
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   background-color: #ffeef0;
@@ -6,6 +7,29 @@ body {
   padding: 0;
 }
 
+/*｛ヘッダーのデザイン細かく｝*/
+header {
+  background-color: #f78da7;   /* 濃いめのピンク */
+  position: fixed;             /* 上に固定する */
+  top: 0;
+  width: 100%;
+  z-index: 1000;               /* 前面に出すための番号 */
+}
+
+/* ヘッダー内のレイアウトを横並びにする */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* 両端に分ける */
+  align-items: center;            /* 垂直方向に真ん中揃え */
+  padding: 10px 20px;
+}
+
+/* サイトタイトルの見た目 */
+.site-title {
+  color: white;
+  font-size: 24px;
+  margin: 0;
+}
 /* ナビゲーションを横並びにする */
 nav ul {
   list-style: none;       /* 点（●）を消す */
@@ -22,6 +46,10 @@ nav li {
 /* ナビゲーションのリンクを装飾 */
 nav a {
   text-decoration: none;  /* 下線を消す */
-  color: #333;
+  color: white;
   font-weight: bold;
+}
+/*｛メインのデザイン細かく｝*/
+main {
+  padding-top: 80px; /* ヘッダーの高さに合わせて調整 */
 }
