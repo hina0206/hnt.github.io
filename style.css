@@ -5,3 +5,23 @@ body {
   margin: 0;
   padding: 0;
 }
+
+/* ナビゲーションを横並びにする */
+nav ul {
+  list-style: none;       /* 点（●）を消す */
+  display: flex;          /* 横並びにする */
+  padding: 0;
+  margin: 0;
+}
+
+/* ナビゲーションの項目を少し間隔あける */
+nav li {
+  margin-right: 20px;
+}
+
+/* ナビゲーションのリンクを装飾 */
+nav a {
+  text-decoration: none;  /* 下線を消す */
+  color: #333;
+  font-weight: bold;
+}
