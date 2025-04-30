@@ -1,11 +1,14 @@
 /*｛サイト全体のデザインについて｝*/
+html {
+  font-size: 18px;  /* htmlタグにfont-sizeを設定 */
+}
 body {
   font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
   background-color: #ffeef0;
   color: #333;
   margin: 0;
   padding: 0;
-  font-size: 22px:
+  font-size: 1rem:
 }
 
 /*｛ヘッダーのデザイン細かく｝*/
