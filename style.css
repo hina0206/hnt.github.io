@@ -56,8 +56,25 @@ nav a {
 main {
   padding-top: 80px; /* ヘッダーの高さに合わせて調整 */
 }
+/*｛ウェルカムメッセージについて｝*/
+.welcome {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #f9f5f6; /* やわらかい背景色 */
+}
 
-/*制作物への移行エリアについて*/
+.welcome h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.welcome p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+}
+/*｛制作物への移行エリアについて｝*/
 .section {
   text-align: center;
   padding: 60px 20px;
