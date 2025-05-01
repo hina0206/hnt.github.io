@@ -94,13 +94,15 @@ main {
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase; /* ボタン文字を大文字に */
+  letter-spacing: 2px; /* 文字の間隔を広くして、スタイリッシュに */
+  transition: all 0.3s ease; /* アニメーション速度を調整 */
 }
 
 .button:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
-  background: linear-gradient(135deg, #f6d365, #fda085); /* 新しいグラデーション */
+  transform: scale(1.1); /* マウスを乗せると少し大きくなる */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); /* 影を強調 */
+  background: linear-gradient(135deg, #fda085, #f6d365); /* グラデーションの方向を逆転 */
 }
 
