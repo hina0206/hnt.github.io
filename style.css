@@ -56,3 +56,29 @@ nav a {
 main {
   padding-top: 80px; /* ヘッダーの高さに合わせて調整 */
 }
+
+/*制作物への移行エリアについて*/
+.section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff8da1;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #e26c88;
+}
