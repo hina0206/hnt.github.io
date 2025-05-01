@@ -94,10 +94,8 @@ main {
   border-radius: 30px;
   font-weight: bold;
   font-size: 16px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase; /* ボタン文字を大文字に */
-  letter-spacing: 2px; /* 文字の間隔を広くして、スタイリッシュに */
-  transition: all 0.3s ease; /* アニメーション速度を調整 */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .button:hover {
