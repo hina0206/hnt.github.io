@@ -256,5 +256,26 @@
     <footer>
       <p>&copy; 2025 ひなたのポートフォリオ</p>
     </footer>
+    <script>
+      const hoverBox = document.getElementById("hover-image");
+      const mapLinks = document.querySelectorAll(".map-link");
+    
+      mapLinks.forEach(link => {
+        link.addEventListener("mouseenter", e => {
+          const imgSrc = link.getAttribute("data-img");
+          hoverBox.querySelector("img").src = imgSrc;
+          hoverBox.classList.remove("hidden");
+        });
+    
+        link.addEventListener("mousemove", e => {
+          hoverBox.style.top = (e.pageY + 20) + "px";
+          hoverBox.style.left = (e.pageX + 20) + "px";
+        });
+    
+        link.addEventListener("mouseleave", e => {
+          hoverBox.classList.add("hidden");
+        });
+      });
+    </script>
   </body>
 </html>
