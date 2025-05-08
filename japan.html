@@ -258,21 +258,25 @@
     </footer>
     <script>
       const hoverBox = document.getElementById("hover-image");
-      const mapLinks = document.querySelectorAll(".map-link");
+      const prefectures = document.querySelectorAll(".prefecture");
     
-      mapLinks.forEach(link => {
-        link.addEventListener("mouseenter", e => {
-          const imgSrc = link.getAttribute("data-img");
-          hoverBox.querySelector("img").src = imgSrc;
+      prefectures.forEach(pref => {
+        pref.addEventListener("mouseenter", e => {
+          const name = pref.querySelector("title")?.textContent || "県名不明";
+          const imgSrc = `images/${name.split(" / ")[0]}.jpg`; // 「岐阜 / Gifu」→「岐阜.jpg」を想定
+    
+          const hoverImg = hoverBox.querySelector("img");
+          hoverImg.src = imgSrc;
+          hoverImg.alt = name;
           hoverBox.classList.remove("hidden");
         });
     
-        link.addEventListener("mousemove", e => {
+        pref.addEventListener("mousemove", e => {
           hoverBox.style.top = (e.pageY + 20) + "px";
           hoverBox.style.left = (e.pageX + 20) + "px";
         });
     
-        link.addEventListener("mouseleave", e => {
+        pref.addEventListener("mouseleave", e => {
           hoverBox.classList.add("hidden");
         });
       });
