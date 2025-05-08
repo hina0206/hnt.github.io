@@ -280,17 +280,6 @@
           hoverBox.classList.add("hidden");
         });
       });
-      document.addEventListener("DOMContentLoaded", function () {
-    // 子要素（pathやpolygon）から fill を削除
-    document.querySelectorAll(".prefecture path, .prefecture polygon").forEach(el => {
-      el.removeAttribute("fill");
-    });
-
-    // gタグ自体から fill を削除
-    document.querySelectorAll(".prefecture").forEach(el => {
-      el.removeAttribute("fill");
-    });
-  });
     </script>
   </body>
 </html>
