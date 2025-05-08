@@ -280,6 +280,9 @@
           hoverBox.classList.add("hidden");
         });
       });
+      document.querySelectorAll(".prefecture path, .prefecture polygon").forEach(el => {
+        el.removeAttribute("fill");
+      });
     </script>
   </body>
 </html>
