@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>「名古屋で遊ぼう」要件定義書</title>
+  <style>
+    body {
+      font-family: 'Arial', 'Helvetica', sans-serif;
+      line-height: 1.8;
+      background-color: #fff7f9;
+      color: #333;
+      margin: 0;
+      padding: 2em;
+    }
+    h1 {
+      color: #d36c9c;
+      border-bottom: 2px solid #d36c9c;
+      padding-bottom: 0.3em;
+    }
+    h2 {
+      color: #bb4c8b;
+      margin-top: 2em;
+    }
+    ul {
+      padding-left: 1.2em;
+    }
+    section {
+      margin-bottom: 2em;
+    }
+    .note {
+      background-color: #ffeef3;
+      padding: 1em;
+      border-left: 5px solid #f08fb8;
+      margin-bottom: 2em;
+    }
+  </style>
+</head>
+<body>
+  <h1>「名古屋で遊ぼう」要件定義書</h1>
+
+  <div class="note">
+    ⚠️ この要件定義書は制作中のアプリに関する草案です。今後内容が変更される可能性があります。
+  </div>
+
+  <section>
+    <h2>1. 目的・背景</h2>
+    <ul>
+      <li><strong>なぜこのWebアプリを作るのか？</strong><br>名古屋の楽しめる場所を紹介するため。</li>
+      <li><strong>解決したい課題</strong><br>名古屋は特筆して有名なものが少なく、旅行客の通過点になりがち。住民も「行きたい」と思える遊び場が見つけづらい。</li>
+      <li><strong>ターゲットユーザー</strong><br>名古屋旅行予定の旅行客（外国人観光客含む）、名古屋で今から遊ぼうとしている大学生・社会人。</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>2. アプリの概要</h2>
+    <ul>
+      <li><strong>アプリ名（仮）</strong>：「名古屋で遊ぼう」</li>
+      <li><strong>一言でいうと</strong>：目的別に名古屋の遊び場を紹介するアプリ</li>
+      <li><strong>スマホ対応</strong>：必要（スマホでの使用を想定）</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>3. 機能要件</h2>
+    <ul>
+      <li>質問を繰り返して目的を絞る検索・絞り込み機能</li>
+      <li>「いいね！」機能（提案の信頼性向上にも）</li>
+      <li>多言語対応</li>
+      <li>チャットインターフェース（例：Difyなどを活用）</li>
+      <li>※必要に応じて機能を追加検討</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>4. 非機能要件</h2>
+    <ul>
+      <li><strong>パフォーマンス</strong>：旅行中に使う前提のため、操作が重くならないこと</li>
+      <li><strong>セキュリティ</strong>：いいね機能にログインが必要か検討中</li>
+      <li><strong>同時アクセス</strong>：ゼミの課題のため、大規模な負荷は想定していない</li>
+      <li><strong>対応デバイス</strong>：基本スマホを想定</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>5. 画面設計</h2>
+    <p>現在未定。今後ワイヤーフレーム（画面のざっくり設計）を検討予定。</p>
+  </section>
+
+  <section>
+    <h2>6. 使用予定の技術</h2>
+    <ul>
+      <li>Glitchを利用して開発</li>
+      <li>必要に応じてJavaScriptや外部API、LLMチャットツール（例：Dify）を導入</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>7. スケジュール</h2>
+    <ul>
+      <li>完成・発表：7月予定</li>
+      <li>開発体制：個人開発</li>
+    </ul>
+  </section>
+</body>
+</html>
