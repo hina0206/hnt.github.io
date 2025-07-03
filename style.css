@@ -171,4 +171,23 @@ main {
   display: none;
 }
 
+/* 都道府県ページ左下にマップに戻るボタン  */
+.fixed-map-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #f8f8f8;
+  color: #333;
+  padding: 10px 14px;
+  border-radius: 30px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+.fixed-map-button:hover {
+  background-color: #ddd;
+}
+
 
