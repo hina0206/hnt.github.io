@@ -17,3 +17,6 @@
     </footer>
   </body>
 </html>
+
+都道府県ページにマップ戻るボタン
+<a href="../japan.html" class="fixed-map-button">🗾 マップに戻る</a>
