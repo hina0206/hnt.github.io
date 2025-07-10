@@ -190,6 +190,13 @@ main {
   background-color: #ddd;
 }
 
+@media (max-width: 600px) {
+  .fixed-map-button {
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+}
+
 /* 旅行の写真の大きさ固定  */
 .spot-img {
   max-width: 100%;
