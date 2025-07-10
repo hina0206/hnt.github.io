@@ -193,8 +193,17 @@ main {
   display: block;
   margin: 1em auto;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: contain;
 }
+
+.spot-img.vertical {
+  max-height: 60vh;
+}
+
+.spot-img.horizontal {
+  max-height: 40vh; /* ここはお好みで調整してね */
+}
+
 
 
 .fixed-map-button:hover {
