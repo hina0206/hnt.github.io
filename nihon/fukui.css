@@ -1,0 +1,109 @@
+/* 福井県ページ専用スタイル */
+
+/* ページ全体の最大幅をやや狭めにして落ち着いた雰囲気に */
+main {
+  max-width: 800px;
+  margin: 2em auto;
+  background: #faf8f5;  /* 和風のやわらかい背景色 */
+  padding: 2em;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(75, 54, 33, 0.2);
+  font-family: 'Yu Mincho', serif; /* 和テイストなフォント */
+  color: #4b3621;
+}
+
+/* タイトルの装飾 */
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 0.3em;
+  font-weight: 700;
+  color: #3e2f1c;
+  letter-spacing: 0.1em;
+  font-family: 'Yu Mincho', serif;
+  text-shadow: 1px 1px 1px rgba(255,255,255,0.6);
+}
+
+/* サブタイトルっぽいやつ */
+h2 {
+  font-size: 1.6rem;
+  border-left: 6px solid #a97448;
+  padding-left: 0.6em;
+  margin-top: 2em;
+  color: #5c4623;
+}
+
+/* 写真のラッパーを和紙っぽく演出 */
+.image-wrapper {
+  background: #fefbf7;
+  border: 2px solid #dbc7a4;
+  border-radius: 12px;
+  padding: 0.5em;
+  box-shadow: 2px 2px 6px rgba(150,120,80,0.2);
+  margin-bottom: 2em;
+}
+
+/* 旅行写真の調整 */
+.spot-img {
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(100, 80, 40, 0.2);
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+}
+
+/* アクセス情報などの説明文 */
+.access-info {
+  background-color: #f3ede0;
+  border-left: 5px solid #a97448;
+  padding: 1em 1.5em;
+  margin: 1em 0 2em 0;
+  font-size: 1rem;
+  color: #4a3a18;
+  line-height: 1.6;
+  border-radius: 8px;
+}
+
+/* 感想文などのテキスト */
+.description {
+  font-size: 1.1rem;
+  margin-bottom: 1.5em;
+  color: #4b3a1d;
+  line-height: 1.7;
+}
+
+/* リンクやボタンは和風だけど優しい色味で */
+a.button, .fixed-map-button {
+  background: linear-gradient(135deg, #c6a664, #e1d2a2);
+  color: #4a3a18;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 3px 7px rgba(166, 140, 60, 0.5);
+  transition: background 0.3s ease;
+}
+
+a.button:hover, .fixed-map-button:hover {
+  background: linear-gradient(135deg, #e1d2a2, #c6a664);
+  color: #3b2d0d;
+  box-shadow: 0 4px 10px rgba(130, 110, 40, 0.7);
+}
+
+/* スマホ調整も少し */
+@media (max-width: 600px) {
+  main {
+    padding: 1.5em 1em;
+    margin: 1em auto;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
