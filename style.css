@@ -186,6 +186,10 @@ main {
   z-index: 1000;
 }
 
+.fixed-map-button:hover {
+  background-color: #ddd;
+}
+
 /* 旅行の写真の大きさ固定  */
 .spot-img {
   max-width: 100%;
@@ -204,10 +208,14 @@ main {
   max-height: 40vh; /* ここはお好みで調整してね */
 }
 
-
-
-.fixed-map-button:hover {
-  background-color: #ddd;
+.image-wrapper {
+  width: 100%;
+  max-width: 900px;
+  margin: 1em auto;
+  padding: 0 1em; /* スマホではちょっと余白 */
 }
+
+
+
 
 
