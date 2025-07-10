@@ -186,6 +186,17 @@ main {
   z-index: 1000;
 }
 
+/* 旅行の写真の大きさ固定  */
+.spot-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 1em auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+
 .fixed-map-button:hover {
   background-color: #ddd;
 }
